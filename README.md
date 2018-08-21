@@ -1,2 +1,2 @@
 # Practice
-For exercise only.
+For practice only.
