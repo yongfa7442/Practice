@@ -111,18 +111,7 @@ Sub 合并单元格()
     Application.CutCopyMode = False
 End Sub
 
-'测试断点
-Sub s2()
- Dim x As Integer
- Do
-   x = x + 1
-   If Cells(x + 1, 1) <> Cells(x, 1) + 1 Then	
-      Cells(x, 2) = "断点"
-      Exit Do
-   End If
- Loop Until x = 14
 
-End Sub
 
 '选定区域空白单元格填充数字0
 Sub s1()
