@@ -1,22 +1,28 @@
 # VBA
 For practice only.
+
 '到第一个工作表
 Sub GoToFirstSheet()
 
+'选择最左边工作表
+'插入工作表
 On Error Resume Next
-Sheets(1).Select             '选择最左边工作表
-Sheets.Add                    '插入工作表
+Sheets(1).Select             
+Sheets.Add           
 
+'提取每一个工作表名称
 For Each sh In Sheets
-k = k + 1                     '提取每一个工作表名称
+k = k + 1                     
 Cells(k, 1) = sh.Name
 Next
 
-Rows("1:1").Select                '选择1,1单元格
-Selection.Delete Shift:=xlUp  '删除首行
+'选择1,1单元格
+ '删除首行
+Rows("1:1").Select                
+Selection.Delete Shift:=xlUp 
 
-
-Columns("A:A").Insert        '在A列左边插入1列
+ '在A列左边插入1列
+Columns("A:A").Insert       
    
                  
  '首列输入1-n
@@ -25,9 +31,13 @@ Dim i As Integer
 n = WorksheetFunction.CountA([B:B])
     
 i = 1
+
 Do While i < n + 1
-  Cells(i, 1) = i
-    i = i + 1
+
+   Cells(i, 1) = i
+  
+   i = i + 1
+    
 Loop
     
     
