@@ -20,3 +20,4 @@
     End If
     Set rng = Nothing
     End Sub
+    git config --global color.ui true
