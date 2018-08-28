@@ -20,15 +20,15 @@ Columns("A:A").Insert        '在A列左边插入1列
    
                  
  '首列输入1-n
-    Dim i As Integer
+Dim i As Integer
     
-    n = WorksheetFunction.CountA([B:B])
+n = WorksheetFunction.CountA([B:B])
     
-    i = 1
-    Do While i < n + 1
-        Cells(i, 1) = i
-        i = i + 1
-    Loop
+i = 1
+Do While i < n + 1
+  Cells(i, 1) = i
+    i = i + 1
+Loop
     
     
 MsgBox "共提取了" & n & "个工作表名称!"
