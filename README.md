@@ -1,6 +1,3 @@
-# VBA
-For practice only.
-
 Public n As Integer
 
 Sub GoToFirstSheet()
@@ -15,11 +12,8 @@ Cells(k, 1) = sh.Name
 Next
 
 Rows("1:1").Select                '选择1,1单元格
-    Selection.Delete Shift:=xlUp  '删除首行
 
-
-   Columns("A:A").insert        '在A列左边插入1列
-   
+Selection.Delete Shift:=xlUp  '删除首行
                     
 MsgBox "共提取了" & k & "个工作表名称!"
 
