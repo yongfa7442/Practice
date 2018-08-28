@@ -15,8 +15,7 @@ Next
 Rows("1:1").Select                '选择1,1单元格
     Selection.Delete Shift:=xlUp  '删除首行
 
-
-   Columns("A:A").Insert        '在A列左边插入1列
+ Columns("A:A").Insert        '在A列左边插入1列
    
                  
  '首列输入1-n
@@ -59,12 +58,8 @@ End Sub
 '合并单元格
 
 Sub 合并单元格()
-'
-' 合并单元格 Macro
-'
-' 快捷键: Ctrl+s
-'
-    With Selection
+ 
+   With Selection
         .HorizontalAlignment = xlCenter
         .VerticalAlignment = xlBottom
         .WrapText = False
