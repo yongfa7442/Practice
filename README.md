@@ -1,15 +1,17 @@
-'插入空行
-Sub TEST2()   'INSERT
+Sub TEST4() 'copy
 
-Columns("A:A").Insert '在A列左边插入1列
-
-Dim a%
-
-a = 2
-
-Do While a < 2 * n + 1
-        Rows(a).Insert  '插入a行
-        a = a + 2
-  Loop
+'copy & paste
+'首列输入日期
+    Dim i As Integer
     
+    i = 1
+    Do While i < 2 * n + 1
+    
+        Cells(i, 1) = Format(Date - 1)
+        
+          Cells(i, 1).NumberFormat = "m-d"
+          
+        i = i + 1
+    Loop
+
 End Sub
