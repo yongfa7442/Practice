@@ -1,7 +1,15 @@
+Public n%
 
-Public n As Integer
 
-Sub GoToFirstSheet()
+Sub p4p6()
+n = Worksheets.Count
+Call TEST1
+Call TEST2
+Call TEST4
+Call Data_
+
+End Sub
+Sub TEST1()  'Go to fistsheet
 
 On Error Resume Next
 Sheets(1).Select             '选择最左边工作表
@@ -14,7 +22,4 @@ Next
 
 Rows("1:1").Select                '选择1,1单元格
     Selection.Delete Shift:=xlUp  '删除首行
-                    
-MsgBox "共提取了" & k & "个工作表名称!"
-
 End Sub
