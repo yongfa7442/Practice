@@ -1,7 +1,6 @@
     Sub TEST3()
-' Merge
-' 合并单元格
-
+    ' Merge
+    ' 合并单元格
      Dim i%, a%
       FOR i =1 to 2 * n STEP 2   
         FOR a = 2 to 13 STEP 1
