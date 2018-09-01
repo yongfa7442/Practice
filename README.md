@@ -1,22 +1,18 @@
-' 合并单元格
-Option Explicit
+Sub Data_()
+Dim i%, a%, b%, c%, d%
 
-Sub Merge()
+ b = 3: c = 2: d = 8
+Do While b < 6
+a = 1
+    For i = 1 To n
+        Cells(a, b) = Worksheets(i + 1).Cells(3, c)
+        Cells(a, d) = Worksheets(i + 1).Cells(5, c)
+     a = a + 2
+    Next
+    b = b + 1
+    c = c + 1
+    d = d + 1
+Loop
 
-n = WorksheetFunction.CountA([B:B])
 
-  Dim i As Integer
- 
-  i = 1
- 
- Do While i <= 2 * n
-  
-    Cells(i + 1, 1).copy Cells(i, 1)
-   
-    range(Cells(i, 2), Cells(i + 1, 2)).Merge
-   
-    i = i + 2
-    
-  Loop
-    
 End Sub
