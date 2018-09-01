@@ -1,11 +1,13 @@
-Sub TEST4() 'copy
+    Sub TEST4() 'copy
 
-'copy & paste
-'首列输入日期
+    'copy & paste
+    '首列输入日期
+ 
     Dim i As Integer
-    
-    i = 1
-    Do While i < 2 * n + 1
+        
+        i = 1
+        
+        Do While i < 2 * n + 1
     
         Cells(i, 1) = Format(Date - 1)
         
@@ -14,4 +16,4 @@ Sub TEST4() 'copy
         i = i + 1
     Loop
 
-End Sub
+    End Sub
