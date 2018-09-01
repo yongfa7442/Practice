@@ -1,7 +1,8 @@
-    Sub TEST4() 'copy
+    Sub TEST4() 
+   'copy
 
-    'copy & paste
-    '首列输入日期
+   'copy & paste
+   '首列输入日期
  
     Dim i As Integer
         
